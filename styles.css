@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+}
+h2 {
+    color: rgb(43, 255, 0);
+}
+.tag-bac {
+    background-color:rgb(184, 180, 180);
+}
+span.col {
+    color: red;
+}
+.par-expl {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+}
+.pad {
+    padding-left: 30px;
+    font-weight: lighter;
+    color: #918E7B;
+}
+.num-col {
+    color: #918E7B;
+}
+table {
+    margin: auto;
+}

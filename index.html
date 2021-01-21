@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article>
+        <h1>Les balises HTML</h1>
+        <h2>Les tableaux</h2>
+        <p>La première balise à connaître est <span class="tag-bac"> &lt;table&gt; &lt;/table&gt;  </span>.
+            C'est cette balise qui permet d'indiquer le début et la fin d'un tableau.
+        </p>
+        <p>
+            Cette balise est de type bloc, il faut donc la placer en dehors d'un paragraphe. Exemple :
+        </p>
+        <div class="par-expl">
+                <span class="num-col"> 1</span> &lt;<span class="col">p</span>&gt; ceci est un paragraph avant le tableau. &lt;/<span class="col">p</span>&gt;<br>
+                <span class="num-col"> 2</span> <br>
+                <span class="num-col"> 3</span> &lt;<span class="col">table</span>&gt;<br>
+                <span class="num-col"> 4</span> <span class="pad">&lt;!-- Ici, on écrira le contenu du tableau --&gt;</span><br>
+                <span class="num-col"> 5</span> &lt;/<span class="col">table</span>&gt;<br>
+                <span class="num-col"> 6</span> <br>
+                <span class="num-col"> 7</span> &lt;<span class="col">p</span>&gt; ceci est un paragraph après le tableau. &lt;/<span class="col">p</span>&gt;
+        </div>
+        <p>voici deux nouvelles balises très importantes :</p>
+        <ul>
+            <li><span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span>: indique le début et la fin d'une ligne du tableau ;</li>
+            <li><span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>: indique le début et la fin du contenu d'une cellule.</li>
+        </ul>
+        <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne <span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span>, on indique le contenu des différentes cellules <span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>.<br>
+            Schématiquement, un tableau se construit comme à la figure suivante.
+        </p>
+        <img src="/images/tab-image.PNG" alt="tabular example">
+        <p>
+            On a une balise de ligne <span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span> qui englobe un groupe de cellules <span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>.
+                Par exemple, si je veux faire un tableau à deux lignes, avec trois cellules par ligne (donc trois colonnes), je devrai taper ceci :
+        </p>
+        <div class="par-expl">
+            <span class="num-col"> 1</span> &lt;<span class="col">table</span>&gt;<br>
+            <span class="num-col"> 2</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 ans &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Espagn&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 6</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 7</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 8</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 ans &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Espagn&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 11</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 12</span> &lt;/<span class="col">table</span>&gt;<br>
+        </div>
+        <p>Le résultat est un peu déprimant (figure suivante).</p>
+        <table>
+            <tr>
+                <td>Carmen</td>
+                <td>33 ans</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Michelle</td>
+                <td>26 ans</td>
+                <td>États-Unis</td>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>
