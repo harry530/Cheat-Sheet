@@ -64,7 +64,35 @@
                 <td>26 ans</td>
                 <td>États-Unis</td>
             </tr>
+            <caption>Tableau sans bourdure</caption>
         </table>
+        <p>On rajoute les bourdures pour que le tableaux ne soit pas vide, en utilisant le code css suivant:</p>
+        <div class="par-expl">
+            <span class="num-col"> 1</span> td  <span class="num-col"> /* Toutes les cellules des tableaux... */</span><br>
+            <span class="num-col"> 2</span> {<br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border: <span class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><span class="num-col"> /* auront une bordure de 1px */</span><br>
+            <span class="num-col"> 4</span> }<br>
+        </div>
+        <p>Et voici le résultat à la figure suivante.</p>
+        <table id="tab1">
+            <tr>
+                <td>Carmen</td>
+                <td>33 ans</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Michelle</td>
+                <td>26 ans</td>
+                <td>États-Unis</td>
+            </tr>
+            <caption>Chaque cellule a sa propre bourdure</caption>
+        </table>
+        <p>pour coller les bourdures entre elle, on utilise la propriété <span class="tag-bac">border-collapse</span> qui signifie coller les bordures entre elles. cette propriété peut prendre deux valeurs: </p>
+        <ul>
+            <li><span class="tag-bac">collapse</span> : les bordures seront collées entre elles, c'est l'effet qu'on recherche ici ;</li>
+            <li><span class="tag-bac">separate</span> : les bordures seront dissociées (valeur par défaut).</li>
+        </ul>
+
     </article>
 </body>
 </html>

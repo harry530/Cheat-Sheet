@@ -1,3 +1,8 @@
+body {
+    font-family: Georgia;
+    width: 900px;
+    margin: auto;
+}
 h1 {
     color: red;
 }
@@ -6,6 +11,8 @@ h2 {
 }
 .tag-bac {
     background-color:rgb(184, 180, 180);
+    padding: 2px;
+    border: 1px solid rgb(148, 146, 146);
 }
 span.col {
     color: red;
@@ -24,7 +31,26 @@ span.col {
 }
 .num-col {
     color: #918E7B;
+    font-family: 'Courier New';
 }
 table {
-    margin: auto;
+    margin-left: 300px;
+    border-bottom: 1px #918E7B solid;
+    caption-side: bottom;
+    padding: 3px;
+}
+.bor-col {
+    color: #66D9EF;
+}
+.num-col-bor {
+    color: #AE81FF;
+}
+.px-col {
+    color: #FE4481 ;
+}
+#tab1 td{
+    border: 1px solid black;
+}
+ul {
+    line-height: 2em;
 }
