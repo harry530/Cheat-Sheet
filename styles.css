@@ -39,9 +39,8 @@ span.col {
 }
 table {
     margin-left: 300px;
-    border-bottom: 1px #918E7B solid;
-    caption-side: bottom;
     padding: 3px;
+    margin: auto;
 }
 .bor-col {
     color: #66D9EF;
@@ -54,6 +53,11 @@ table {
 }
 #tab2, #tab2, #tab3 {
     border-collapse: collapse;
+    margin: auto;
+}
+#tab6 {
+    border-collapse: separate;
+    border: 1px solid black;
 }
 #tab1 td{
     border: 1px solid black;
@@ -67,6 +71,32 @@ table {
 #tab3 {
     border-spacing: 0px 10px;
 }
-ul {
+#tab6 td {
+    border: 1px solid black;
+}
+ul, ol{
     line-height: 2em;
+}
+p.capt {
+    text-align: center;
+    font-size: small;
+}
+table.big-tab {
+    border-collapse: collapse;
+    margin: auto;
+}
+table.big-tab td, th {
+    border: 1px solid black;
+}
+table.big-tab > thead th {
+    border: 2px solid red;
+}
+table.big-tab > tfoot th {
+    border: 2px solid green;
+}
+table.big-tab > tbody {
+    border: 2px solid blue;
+}
+table.big-tab > tbody td{
+    border: 2px solid blue;
 }

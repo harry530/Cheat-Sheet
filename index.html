@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,168 +8,472 @@
     <title>My own Cheat Sheet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <article>
-        <h1>Les balises HTML</h1>
-        <h2>Les tableaux</h2>
-        <h3>Un tableau simple</h3>
-        <p>La première balise à connaître est <span class="tag-bac"> &lt;table&gt; &lt;/table&gt;  </span>.
-            C'est cette balise qui permet d'indiquer le début et la fin d'un tableau.
+        <h1>HTML tags</h1>
+        <h2>The tables</h2>
+        <h3>A simple table</h3>
+        <p>The first tag to know is <span class="tag-bac"> &lt;table&gt; &lt;/table&gt; </span>.
+            This tag is used to indicate the start and end of an array.
         </p>
         <p>
-            Cette balise est de type bloc, il faut donc la placer en dehors d'un paragraphe. Exemple :
+            This tag is of block type, so it must be placed outside a paragraph. Example:
         </p>
         <div class="par-expl">
-                <span class="num-col"> 1</span> &lt;<span class="col">p</span>&gt; ceci est un paragraph avant le tableau. &lt;/<span class="col">p</span>&gt;<br>
-                <span class="num-col"> 2</span> <br>
-                <span class="num-col"> 3</span> &lt;<span class="col">table</span>&gt;<br>
-                <span class="num-col"> 4</span> <span class="pad">&lt;!-- Ici, on écrira le contenu du tableau --&gt;</span><br>
-                <span class="num-col"> 5</span> &lt;/<span class="col">table</span>&gt;<br>
-                <span class="num-col"> 6</span> <br>
-                <span class="num-col"> 7</span> &lt;<span class="col">p</span>&gt; ceci est un paragraph après le tableau. &lt;/<span class="col">p</span>&gt;
+            <span class="num-col"> 1</span> &lt;<span class="col">p</span>&gt; this is a paragraph before the table.
+            &lt;/<span class="col">p</span>&gt;<br>
+            <span class="num-col"> 2</span> <br>
+            <span class="num-col"> 3</span> &lt;<span class="col">table</span>&gt;<br>
+            <span class="num-col"> 4</span> <span class="pad">&lt;!-- Here, we will write the content of the array --&gt;</span><br>
+            <span class="num-col"> 5</span> &lt;/<span class="col">table</span>&gt;<br>
+            <span class="num-col"> 6</span> <br>
+            <span class="num-col"> 7</span> &lt;<span class="col">p</span>&gt; this is a paragraph after the table.
+            &lt;/<span class="col">p</span>&gt;
         </div>
-        <p>voici deux nouvelles balises très importantes :</p>
+        <p>here are two very important new tags :</p>
         <ul>
-            <li><span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span>: indique le début et la fin d'une ligne du tableau ;</li>
-            <li><span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>: indique le début et la fin du contenu d'une cellule.</li>
+            <li><span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt; </span>: indicates the start and end of a table row ;</li>
+            <li><span class="tag-bac"> &lt;td&gt; &lt;/td&gt; </span>: indicates the beginning and the end of the contents of a cell.</li>
         </ul>
-        <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne <span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span>, on indique le contenu des différentes cellules <span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>.<br>
-            Schématiquement, un tableau se construit comme à la figure suivante.
+        <p>In HTML, a table is built line by line. In each row <span class="tag-bac"> &lt;tr&gt;
+                &lt;/tr&gt; </span>, we indicate the content of the different cells<span class="tag-bac"> &lt;td&gt;
+                &lt;/td&gt; </span>.<br>
+                Schematically, a table is constructed as in the following figure.
         </p>
-        <img src="/images/tab-image.PNG" alt="tabular example">
+        <img src="/images/tab-img2.PNG" alt="tabular example">
         <p>
-            On a une balise de ligne <span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt;  </span> qui englobe un groupe de cellules <span class="tag-bac"> &lt;td&gt; &lt;/td&gt;  </span>.
-                Par exemple, si je veux faire un tableau à deux lignes, avec trois cellules par ligne (donc trois colonnes), je devrai taper ceci :
+            We have a line tag <span class="tag-bac"> &lt;tr&gt; &lt;/tr&gt; </span> which encompasses a group of cells<span class="tag-bac"> &lt;td&gt; &lt;/td&gt; </span>.
+            For example, if I want to make a two-row table, with three cells per row (so three columns),
+            I will have to type this :
         </p>
         <div class="par-expl">
             <span class="num-col"> 1</span> &lt;<span class="col">table</span>&gt;<br>
             <span class="num-col"> 2</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
-            <span class="num-col"> 3</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 ans &lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Espagn&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;33 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Spain&lt;/<span class="col">td</span>&gt;<br>
             <span class="num-col"> 6</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
             <span class="num-col"> 7</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
-            <span class="num-col"> 8</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 ans &lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Espagn&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 8</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Michelle&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;26 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;USA&lt;/<span class="col">td</span>&gt;<br>
             <span class="num-col"> 11</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
             <span class="num-col"> 12</span> &lt;/<span class="col">table</span>&gt;<br>
         </div>
-        <p>Le résultat est un peu déprimant (figure suivante).</p>
-        <table>
-            <tr>
-                <td>Carmen</td>
-                <td>33 ans</td>
-                <td>Espagne</td>
-            </tr>
-            <tr>
-                <td>Michelle</td>
-                <td>26 ans</td>
-                <td>États-Unis</td>
-            </tr>
-            <caption>Tableau sans bourdure</caption>
-        </table>
-        <p>On rajoute les bourdures pour que le tableaux ne soit pas vide, en utilisant le code css suivant:</p>
+        <p>The result is a little depressing (following figure).</p>
+        <div>
+            <table>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 years</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 years</td>
+                    <td>USA</td>
+                </tr>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">Table without border</p>
+        </div>
+        <p>We add the borders so that the table is not empty, using the following css code:</p>
         <div class="par-expl">
-            <span class="num-col"> 1</span> td  <span class="num-col"> /* Toutes les cellules des tableaux... */</span><br>
+            <span class="num-col"> 1</span> td <span class="num-col"> /* All table cells...*/</span><br>
             <span class="num-col"> 2</span> {<br>
-            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border: <span class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><span class="num-col"> /* auront une bordure de 1px */</span><br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border: <span class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><span class="num-col">/* will have a border of 1px */</span><br>
             <span class="num-col"> 4</span> }<br>
         </div>
-        <p>Et voici le résultat à la figure suivante.</p>
-        <table id="tab1">
-            <tr>
-                <td>Carmen</td>
-                <td>33 ans</td>
-                <td>Espagne</td>
-            </tr>
-            <tr>
-                <td>Michelle</td>
-                <td>26 ans</td>
-                <td>États-Unis</td>
-            </tr>
-            <caption>Chaque cellule a sa propre bourdure</caption>
-        </table>
-        <p>pour coller les bourdures entre elle, on utilise la propriété <span class="tag-bac">border-collapse</span> qui signifie coller les bordures entre elles. cette propriété peut prendre deux valeurs: </p>
+        <p>And here is the result in the following figure.</p>
+        <div>
+            <table id="tab1">
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 years</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 years</td>
+                    <td>USA</td>
+                </tr>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">Each cell has its own border</p>
+        </div>
+        <p>to glue the borders together we use the property <span class="tag-bac">border-collapse</span>
+            which means gluing the borders between them. this property can take two values: </p>
         <ul>
-            <li><span class="tag-bac">collapse</span> : les bordures seront collées entre elles, c'est l'effet qu'on recherche ici ;</li>
-            <li><span class="tag-bac">separate</span> : les bordures seront dissociées (valeur par défaut).</li>
+            <li><span class="tag-bac">collapse</span> : the borders will be glued together, this is the effect we are looking for here ;</li>
+            <li><span class="tag-bac">separate</span> : borders will be ungrouped (default value).</li>
         </ul>
         <div class="par-expl">
             <span class="num-col"> 1</span> table <br>
             <span class="num-col"> 2</span> {<br>
-            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border-collapase: collapase</span><span class="num-col">/* Les bordures du tableau seront collées (plus joli) */</span><br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border-collapase:
+                collapase</span><span class="num-col">/* The borders of the table will be glued (prettier) */</span><br>
             <span class="num-col"> 4</span> }<br>
             <span class="num-col"> 5</span> td <br>
             <span class="num-col"> 6</span> {<br>
-            <span class="num-col"> 7</span> <span class="pad"></span><span class="bor-col">border: <span class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><br>
+            <span class="num-col"> 7</span> <span class="pad"></span><span class="bor-col">border: <span
+                    class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><br>
             <span class="num-col"> 8</span> }<br>
         </div>
-        <p>Ce qui donne le resultat suivant:</p>
-        <table id="tab2">
-            <tr>
-                <td>Carmen</td>
-                <td>33 ans</td>
-                <td>Espagne</td>
-            </tr>
-            <tr>
-                <td>Michelle</td>
-                <td>26 ans</td>
-                <td>États-Unis</td>
-            </tr>
-            <caption>Les bordures sont collées les unes aux autres</caption>
-        </table>
-        <h3>La ligne d'en-tête</h3>
-        <p>La ligne d'en-tête se crée avec un <span class="tag-bac"> &lt;tr&gt;  </span>  comme on l'a fait jusqu'ici, mais les cellules qu'elle contient sont, cette fois, encadrées par des balises <span class="tag-bac"> &lt;th&gt;  </span>   et non pas <span class="tag-bac"> &lt;td&gt;  </span>   !</p>
+        <p>Which gives the following result:</p>
+        <div>
+            <table id="tab2">
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 years</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 years</td>
+                    <td>USA</td>
+                </tr>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">Borders are glued to each other</p>
+        </div>
+        <h3>The header row</h3>
+        <p>The header row is created with a <span class="tag-bac"> &lt;tr&gt; </span> as we have done so far, but the cells it contains are, this time, surrounded by tags <span class="tag-bac">&lt;th&gt; </span> and not <span class="tag-bac"> &lt;td&gt; </span> !</p>
         <div class="par-expl">
             <span class="num-col"> 1</span> &lt;<span class="col">table</span>&gt;<br>
             <span class="num-col"> 2</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
-            <span class="num-col"> 3</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Nom&lt;/<span class="col">th</span>&gt;<br>
-            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Age &lt;/<span class="col">th</span>&gt;<br>
-            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;pays&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Name&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Age &lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Country&lt;/<span class="col">th</span>&gt;<br>
             <span class="num-col"> 6</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
             <span class="num-col"> 7</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
-            <span class="num-col"> 8</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 ans &lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Espagn&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 8</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;33 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Spain&lt;/<span class="col">td</span>&gt;<br>
             <span class="num-col"> 11</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
             <span class="num-col"> 12</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
-            <span class="num-col"> 13</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Michelle&lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 14</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;26 ans &lt;/<span class="col">td</span>&gt;<br>
-            <span class="num-col"> 15</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Etats-unis&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 13</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Michelle&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 14</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;26 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 15</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;USA&lt;/<span class="col">td</span>&gt;<br>
             <span class="num-col"> 16</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
             <span class="num-col"> 17</span> &lt;/<span class="col">table</span>&gt;<br>
         </div>
-        <p>Pour appliquer une bordure sue les cellules normals et sur l'en-tête: </p>
+        <p>To apply a border to normal cells and to the header: </p>
         <div class="par-expl">
             <span class="num-col"> 1</span> table <br>
             <span class="num-col"> 2</span> {<br>
-            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border-collapase: collapase</span><br>
+            <span class="num-col"> 3</span> <span class="pad"></span><span class="bor-col">border-collapase:
+                collapase</span><br>
             <span class="num-col"> 4</span> }<br>
-            <span class="num-col"> 5</span> td, th <span class="num-col"> /* Mettre une bordure sur les td ET les th */</span><br>
+            <span class="num-col"> 5</span> td, th <span class="num-col"> /* Put a border on the td AND th*/</span><br>
             <span class="num-col"> 6</span> {<br>
             <span class="num-col"> 7</span> <span class="pad"></span><span class="bor-col">border: <span class="num-col-bor">1</span> <span class="px-col">px</span> solid black</span><br>
             <span class="num-col"> 8</span> }<br>
         </div>
         <br>
-        <table id="tab3">
-            <tr>
-                <th>Nom</th>
-                <th>Age</th>
-                <th>Pays</th>
-            </tr>
-            <tr>
-                <td>Carmen</td>
-                <td>33 ans</td>
-                <td>Espagne</td>
-            </tr>
-            <tr>
-                <td>Michelle</td>
-                <td>26 ans</td>
-                <td>États-Unis</td>
-            </tr>
-            <caption>Un tableau avec un en-tête</caption>
-        </table>
+        <div>
+            <table id="tab3">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 years</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 years</td>
+                    <td>USA</td>
+                </tr>
+                <caption class="cap"></caption>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">A table with a header</p>
+        </div>
+        <h3>Table title</h3>
+        <p>The tag <span class="tag-bac"> &lt;caption&gt;</span> is placed at the very beginning of the table, just before the header. This is the one that contains the title of the table (following figure):</p>
+        <div class="par-expl">
+            <span class="num-col"> 1</span> &lt;<span class="col">table</span>&gt;<br>
+            <span class="num-col"> 2</span> <span class="pad"></span>&lt;<span class="col">caption</span>&gt;Passengers on flight 377&lt;/<span class="col">caption</span>&gt;<br>
+            <span class="num-col"> 3</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 4</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Name&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 5</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Age &lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 6</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">th</span>&gt;Country&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col"> 7</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 8</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 9</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Carmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 10</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;33 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 11</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Spain&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 12</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 13</span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 14</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;Michelle&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 15</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;26 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 16</span> <span class="pad"></span><span class="pad"></span>&lt;<span
+                class="col">td</span>&gt;USA&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col"> 17</span> <span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col"> 18</span> &lt;/<span class="col">table</span>&gt;<br>
+        </div>
+        <br>
+        <div>
+            <table id="tab3">
+                <caption>Passengers on flight 377</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 years</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 years</td>
+                    <td>USA</td>
+                </tr>
+                <caption class="cap"></caption>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">A table with a header</p>
+        </div>
+        <p>Note that you can change the position of the title with the CSS <span class="tag-bac">
+                &lt;caption-side&gt;</span>
+            property which can take two values:
+        <ul>
+            <li><span class="tag-bac"> &lt;top&gt;</span>: the title will be placed above the table (by default);</li>
+            <li><span class="tag-bac"> &lt;bottom&gt;</span>: the title will be placed below the table.</li>
+        </ul>
+        </p>
+        <h3>A structured table</h3>
+        <p>
+            We will discover two particular techniques: <br>
+        <ul>
+            <li>for large tables, it is possible to divide them into three parts:
+                <ul>
+                    <li>table head,</li>
+                    <li>body of the table,</li>
+                    <li>table foot;</li>
+                </ul>
+            </li>
+            <li>for some tables, you may need to merge cells together.</li>
+        </ul>
+        </p>
+        <h3>Divide a big table</h3>
+        <p>
+            If your table is large enough, you may want to cut it into several parts.
+            To do this, there are HTML tags that allow you to define the three “zones” of the table:
+        <ul>
+            <li>header (on top): it is defined with the tags <span class="tag-bac"> &lt;thead&gt; &lt;/thead&gt;</span>
+                ;</li>
+            <li>body (in the center): it is defined with the tags <span class="tag-bac"> &lt;tbody&gt;
+                    &lt;/tbody&gt;</span> ;</li>
+            <li>footer (at the bottom): it is defined with the tags <span class="tag-bac"> &lt;tfoot&gt;
+                    &lt;/tfoot&gt;</span> .</li>
+        </ul>
+        </p>
+        <div>
+            <table class="big-tab">
+                <caption>Passengers on flight 377</caption>
+    
+                <thead>
+                    <!-- En-tête du tableau -->
+                    <tr>
+                        <th style="color: red;">table header</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>country</th>
+                        <th><span style="color: red;"> &lt;thead&gt;</span></th>
+                    </tr>
+                </thead>
+    
+                <tfoot>
+                    <!-- Pied de tableau -->
+                    <tr>
+                        <th style="color: green;">table foot</th>
+                        <th>Name</th>
+                        <th>age</th>
+                        <th>Country</th>
+                        <th><span style="color: green;"> &lt;tfoot&gt;</span></th>
+                    </tr>
+                </tfoot>
+    
+                <tbody>
+                    <!-- Corps du tableau -->
+                    <tr>
+                        <td rowspan="6" style="color: blue;">Table body</td>
+                        <td>Harry</td>
+                        <td>33 years</td>
+                        <td>Spain</td>
+                        <td rowspan="6" style="color: blue;"> &lt;tbody&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Jennifer</td>
+                        <td>26 years</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Emilie</td>
+                        <td>43 years</td>
+                        <td>GB</td>
+                    </tr>
+                    <tr>
+                        <td>Karmen</td>
+                        <td>34 years</td>
+                        <td>GB</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>13 years</td>
+                        <td>Australia</td>
+                    </tr>
+                    <tr>
+                        <td>Xu</td>
+                        <td>19 years</td>
+                        <td>China</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">A table divided into several parts</p>
+        </div>
+        <p>
+            It's a bit confusing, but it is advisable to write the tags in the following order:
+            <ol>
+                <li><span class="tag-bac"> &lt;thead&gt;</span></li>
+                <li><span class="tag-bac"> &lt;tfoot&gt;</span></li>
+                <li><span class="tag-bac"> &lt;tbody&gt;</span></li>
+            </ol>
+            Here is the code to write to build the three-part table:
+        </p>   
+        <div class="par-expl">
+            <span class="num-col">1</span> &lt;<span class="col">table</span>&gt;<br>
+            <span class="num-col">2</span> <span class="pad"></span>&lt;<span class="col">caption</span>&gt;Passagers
+            du vol 377&lt;/<span class="col">caption</span>&gt;<br>
+            <span class="num-col">3</span><br>
+            <span class="num-col">4</span> <span class="pad"></span>&lt;<span class="col">thead</span>&gt;<span class="num-col"> /* Header */</span><br>
+            <span class="num-col">5</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">6</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Name&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">7</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Age &lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">8</span> <span class="pad"></span><span class="pad"><span class="pad"></span></span>&lt;<span class="col">th</span>&gt;Country&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">9</span> <span class="pad"><span class="pad"></span></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">10</span> <span class="pad"></span>&lt;<span class="col">/thead</span>&gt;<br>
+            <span class="num-col">11</span> <span class="pad"></span>&lt;<span class="col">tfoot</span>&gt;<span class="num-col"> /* Footer */</span><br>
+            <span class="num-col">12</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">13</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Name&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">14</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">th</span>&gt;Age &lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">15</span> <span class="pad"></span><span class="pad"><span class="pad"></span></span>&lt;<span class="col">th</span>&gt;Country&lt;/<span class="col">th</span>&gt;<br>
+            <span class="num-col">16</span> <span class="pad"><span class="pad"></span></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">17</span> <span class="pad"></span>&lt;<span class="col">/tfoot</span>&gt;<br>
+            
+            <span class="num-col">18</span> <span class="pad"></span>&lt;<span class="col">/tbody</span>&gt;<span class="num-col"> /* Body */</span><br>
+            <span class="num-col">19</span> <span class="pad"></span> <span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">20</span> <span class="pad"></span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Harry&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">21</span></span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;33 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">22</span></span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Spain&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">23</span></span> <span class="pad"></span><span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">24</span> <span class="pad"><span class="pad"></span></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">25</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Jennifer&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">26</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;26 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">27</span> <span class="pad"><span class="pad"></span></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;USA&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">28</span> <span class="pad"><span class="pad"></span></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">29</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">30</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Emilie&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">31</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;43 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">32</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;GB&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">33</span> <span class="pad"></span><span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">34</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">35</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Karmen&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">36</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;34 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">37</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;GB&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">38</span> <span class="pad"></span><span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">39</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">40</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;John&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">41</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;13 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">42</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Australia&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">43</span> <span class="pad"></span><span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">44</span> <span class="pad"></span><span class="pad"></span>&lt;<span class="col">tr</span>&gt;<br>
+            <span class="num-col">45</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;Xu&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">46</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;19 years &lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">47</span> <span class="pad"></span><span class="pad"></span><span class="pad"></span>&lt;<span class="col">td</span>&gt;China&lt;/<span class="col">td</span>&gt;<br>
+            <span class="num-col">48</span> <span class="pad"></span><span class="pad"></span>&lt;/<span class="col">tr</span>&gt;<br>
+            <span class="num-col">49</span> <span class="pad"></span>&lt;<span class="col">tbody</span>&gt;<br>
+            
+            <span class="num-col">50</span> &lt;/<span class="col">table</span>&gt;<br>
+        </div>
+        <h3>Merge cells</h3>
+        <p>In some complex tables, you will need to "merge" cells together. <br> An example of fusion: </p>
+        <div>
+            <table id="tab6">
+                <caption>A more complex table</caption>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td colspan="2" style="font-weight: bold; text-align: center;">Average</td>
+                    <td rowspan="2" style="font-weight: bold;">Other <br> cathegory</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">Height</td>
+                    <td style="font-weight: bold;">Weight</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">males</td>
+                    <td>1.9</td>
+                    <td>0.003</td>
+                    <td>yyy</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">female</td>
+                    <td>1.7</td>
+                    <td>0.002</td>
+                    <td>xxx</td>
+                </tr>
+            </table>
+            <hr width="50%" color="#AE81FF">
+            <p class="capt">A table with merged cells</p>
+        </div>
+        <p>
+            To perform a merger, we add an attribute to the <span class="tag-bac"> &lt;td&gt;</span> tag. You should know that there are two types of merger:
+            <ol>
+                <li><span style="font-weight: bold;">Merging columns</span> :  The merger is carried out horizontally. We will use the attribute <span class="tag-bac">colspan</span></li>
+                <li><span style="font-weight: bold;">The merger of lines</span> :  The merger will take place vertically. We will use the attribute <span class="tag-bac">rowspan</span></li>
+            </ol>
+        </p>
+        <p>
+            As you know, you need to give a value to the attribute (be it colspan or rowspan). 
+            You must indicate the number of cells to merge between them. In our example, we have merged two cells: that of row 1 and that of row 2. 
+            And also we have merged two columns 2 and 3. We will therefore have to write:
+        </p>
+        <div class="par-expl">
+            <span class="num-col">1</span> &lt;<span class="col">td <span style="color: green;">colspan</span>=<span style="color: coral;"> "2"</span></span>&gt;<br>
+            <span class="num-col">2</span> &lt;/<span class="col">td <span style="color: green;">rowspan</span>=<span style="color: coral;"> "2"</span></span>&gt;<br>
+        </div>
     </article>
 </body>
+
 </html>
